@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container{
+width: 100px;
+height: 100px;
+
+  }
+  p{width:500px;
+  }
+ .box{width: 100px;
+ height: 80px;
+ transition-duration: 2s;
+ }
+ .container:hover .box{
+   width:600px;
+ }
+ .one{
+   background: blueviolet;
+   transition-timing-function: ease;
+ }
+ .two{
+   background:blue;
+   transition-timing-function: linear;
+ }
+ .three{
+   background: skyblue;
+   transition-timing-function: ease-in;
+ }
+ .four{
+   background: purple;
+   transition-timing-function: ease-out;
+ }
+ .five{
+   background: blueviolet;
+   transition-timing-function: ease-in-out;
+
+ }
+ .six{
+   background: brown;
+   transition-timing-function: cubic-bezier(1, 0.08, 0, 1.13);
+ }
+</style>
+</head>
+<body>
+    <div class="container">
+     <p>A slow start, then fast, then end slowly (this is default)</p>
+      <div class="box one">Ease</div>
+      <p>The same speed from start to end</p>
+      <div class="box two">linear</div>
+      <p>with a slow start</p>
+      <div class="box three">ease-in</div>
+      <p>with a slow end</p>
+      <div class="box four">ease-out</div>
+      <p>with a slow start and end</p>
+      <div class="box five">ease-in-out</div>
+      <p>lets you define your own values in a cubic-bezier function</p>
+      <div class="box six">cubic-bezier(n,n,n,n)</div>
+
+
+    </div>
+</body>
+</html>
